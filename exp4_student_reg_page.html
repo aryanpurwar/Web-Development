@@ -1,53 +1,97 @@
 <!Doctype html>
 <html>	
 
-	<head>
+<header>	<head>
+<style>h1{
+	background-color :#DF6589FF	;
+	text-align:center;
+	}
+	body{
+		  padding-top: 50px;
+		  padding-right: 30px;
+ 		 padding-bottom: 50px;
+ 		 padding-left: 80px;
+	}	
+	#footer{
+	background-color:#3C1053FF;
+	color:  #DF6589FF;
+	}
+	header{
+	border-style:solid;
+	background-color:#3C1053FF;
+	}
+	input{
+	font-size:25px;
+	}
+	b{
+	text-align:center;
+	font-size:25px;
+	}
+	div{
+	background-color:#DF6589FF;
+	padding:20px;
+	height: 650px;
+	width: 50%;
+	margin-left:400px;
+	}
+	#bold{
+	text-align:center;
+	color:#DF6589FF;
+	}
+	#sss{	
+	text-align:center;
+	}	
+</style>
+
+
 	<h1><u>Welcome to student registration page</u></h1>
 		<title>
-		Student Registration Page
+		Student Registration Page (B305)
 		</title>
 	</head>
-	
+<header>	
+
 	<body>
-	<p><b>Basic Information</b></p>
-	
+	<p id=bold><b><u>Basic Information</u></b><br><br></p>
+	<div>
 		<form>
 			<tr>
-				<td>Full Name<input type="text"></td>
-			</tr>
-
-			<tr>
-				<td>Email <input type="text"></td>
-			</tr>
-
-			<tr>
-				<td>SapId <input type="text"></td>
-			</tr>
-
-			<tr>
-				<td>Program <input type="list"></td>
-			<tr>
-		
-			<tr>
-				<td>Branch</td>
-			</tr>
-
-			<tr>
-				<td>Roll. no <input type="text"></td>
-			</tr>
-
-			<tr>
-				<td>CGPA <input type="text"></td>
-			</tr>
-
-			<tr>
-				<td>Phone <input type="text"></td>
-			</tr>
+				<td>Full Name<br><input type="text" placeholder="Your's Name" required></td>
+			</tr><br></br>
 			
-			<tr>
-				<td><input type="submit" target=_blank></td>
-			</tr>
-		
+	
+				<td>Email <br><input type="text" placeholder="example@gmail.com" required></td><br></br>
+			
+				<td>SapId <br><input type="text" maxlength="11" size="11" required></td><br></br>			
+
+				<td>Program <br><select> 	
+					<option>BTech</option>			
+					<option>MBATech</option>
+					</select></td><br></br>
+			
+				<td>Branch <br><select  size=“4”> 
+
+					<option>CE</option> 
+					<option>CS </option> 
+					<option>IT</option> 
+					<option>AIML</option> 
+					</select></td><br></br>
+			
+				<td>Roll. no <br><input type="text" maxlength="4" size="4"></td><br></br>			
+
+				<td>CGPA <br><input type="text" maxlength="5" size="5" required></td><br></br>
+			
+				<td>Phone <br><input type="text" size="10" maxlength="10" placeholder="+91" required></td><br></br>
+			
+			
+			
+				
+			</tr> 
 		</form>
+				<footer><p id=footer>Designed by Aryan Purwar<br>Mob. 9140908009</p></footer>
+
+	</div>	
+	<p id=sss><td><input type="submit" target="_blank"></td></p>
 	</body>
+	
 </html>
